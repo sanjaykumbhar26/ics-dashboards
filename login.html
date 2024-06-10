@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="./" />
+    <title>ICS Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="ICS Dashboard for SMS, RCS, and Email Marketing services" />
+    <meta name="keywords" content="ICS, SMS marketing, RCS, Email marketing, dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+    <!--begin::Fonts(mandatory for all pages)-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--end::Fonts-->
+    <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/login.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    <!--end::Global Stylesheets Bundle-->
+    <script>
+        // Frame-busting to prevent site from being loaded within a frame without permission (click-jacking)
+        if (window.top != window.self) { window.top.location.replace(window.self.location.href); }
+    </script>
+</head>
+
+<body id="kt_body" class="login-bg app-blank bgi-size-cover bgi-attachment-fixed bgi-position-center">
+    <!--begin::Theme mode setup on page load-->
+    <script>
+        var defaultThemeMode = "light"; var themeMode;
+        if (document.documentElement) {
+            if (document.documentElement.hasAttribute("data-bs-theme-mode")) {
+                themeMode = document.documentElement.getAttribute("data-bs-theme-mode");
+            } else {
+                if (localStorage.getItem("data-bs-theme") !== null) {
+                    themeMode = localStorage.getItem("data-bs-theme");
+                } else {
+                    themeMode = defaultThemeMode;
+                }
+            }
+            if (themeMode === "system") {
+                themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            }
+            document.documentElement.setAttribute("data-bs-theme", themeMode);
+        }
+    </script>
+    <!--end::Theme mode setup on page load-->
+    <!--begin::Root-->
+    <div class="d-flex flex-column flex-root" id="kt_app_root">
+        <!--begin::Page bg image-->
+        <style>
+            body {
+                background-image: url('assets/media/auth/bg10.jpeg');
+            }
+
+            [data-bs-theme="dark"] body {
+                background-image: url('assets/media/auth/bg10-dark.jpeg');
+            }
+        </style>
+        <!--end::Page bg image-->
+        <!--begin::Authentication - Sign-in -->
+        <div class="d-flex flex-column-reverse flex-lg-row flex-column-fluid">
+            <!--begin::Aside-->
+            <div class="d-flex w-100">
+                <!--begin::Content-->
+                <div
+                    class="d-flex login-content flex-column justify-content-center pb-10 pb-lg-10 p-10 w-100 pb-md-10 align-items-center align-items-lg-start">
+                    <!--begin::Image-->
+                    <div class="logo d-none d-lg-flex">
+                        <img class="" src="assets/media/logos/logo.png" alt="ICS Logo" />
+                    </div>
+                    <!--end::Image-->
+                    <!--begin::Title-->
+                    <h1 class="fw-bold mb-10">Here's everything you need to know about
+                        <span>Our messaging platform.</span>
+                    </h1>
+                    <!--end::Title-->
+                    <!--begin::Text-->
+                    <div class="text-gray-600 fs-base fw-semibold ">
+                        <ul class="mb-10 list-none list-group-flush">
+                            <li class="fw-semibold fs-base mb-4 gap-3 d-flex align-items-center">
+                                <img alt="icon" src="assets/images/icon_1.svg">
+                                Campaigns that deliver personalized offers to targeted
+                                audiences
+                            </li>
+                            <li class="fw-semibold fs-base mb-4 gap-3 d-flex align-items-center">
+                                <img alt="icon" src="assets/images/icon_2.svg"> Send updates & reminders with pre-built
+                                templates
+                            </li>
+                            <li class="fw-semibold fs-base mb-4 gap-3 d-flex align-items-center">
+                                <img alt="icon" src="assets/images/icon_3.svg"> No-code
+                                chatbots provide 24x7 instant engagement
+                            </li>
+                            <li class="fw-semibold fs-base mb-4 gap-3 d-flex align-items-center">
+                                <img alt="icon" src="assets/images/icon_4.svg"> Faster
+                                issue resolution with powerful automations
+                            </li>
+                            <li class="fw-semibold fs-base gap-3 d-flex align-items-center">
+                                <img alt="icon" src="assets/images/icon_5.svg"> The ability to bring in context from
+                                Zoho, Shopify, etc.
+                            </li>
+                        </ul>
+                        <p class="tag-line fw-bold fs-3">A trusted partner for 8000+ customers in 52 countries:</p>
+                        <div class="company-logo">
+                            <img src="assets/media/login/amazon.png" alt="Amazon" class="me-3" />
+                            <img src="assets/media/login/axis.png" alt="Axis Bank" class="me-3" />
+                            <img src="assets/media/login/nykaa.png" alt="Nykaa" class="me-3" />
+                            <img src="assets/media/login/hexaware.png" alt="Hexaware" class="me-3" />
+                            <img src="assets/media/login/croma.png" alt="Croma" class="me-3" />
+                            <img src="assets/media/login/shopify.png" alt="Shopify" />
+                        </div>
+                    </div>
+                    <!--end::Text-->
+                </div>
+                <!--end::Content-->
+            </div>
+            <!--begin::Aside-->
+            <!--begin::Body-->
+            <div
+                class="d-flex flex-column-fluid flex-lg-row-auto justify-content-center justify-content-lg-end p-sm-0 p-xs-0 p-md-12 p-0">
+                <!--begin::Wrapper-->
+                <div class="d-flex w-100 flex-column flex-center rounded-4 w-lg-500px p-10">
+                    <!--begin::Content-->
+                    <div class="d-flex flex-center flex-column align-items-stretch h-lg-100 w-md-468px w-100">
+                        <!--begin::Wrapper-->
+                        <div class="d-flex flex-center flex-column flex-column-fluid ">
+                            <div class="logo d-flex d-lg-none">
+                                <img class="" src="assets/media/logos/logo.png" alt="ICS Logo">
+                            </div>
+                            <!--begin::Form-->
+                            <form class="form w-100 login-box bg-body px-6 py-8" novalidate="novalidate"
+                                id="kt_sign_in_form" data-kt-redirect-url="index.html" action="#">
+                                <!--begin::Heading-->
+                                <!-- <div class="text-center mb-11"> -->
+                                <!--begin::Title-->
+                                <!-- <h1 class="text-gray-900 fw-bolder mb-3">Sign In</h1> -->
+                                <!--end::Title-->
+                                <!--begin::Subtitle-->
+                                <!-- <div class="text-gray-500 fw-semibold fs-6">Access Your ICS Dashboard</div> -->
+                                <!--end::Subtitle=-->
+                                <!-- </div> -->
+                                <!--begin::Heading-->
+                                <!--begin::Input group=-->
+                                <div class="fv-row mb-8">
+                                    <!--begin::Email-->
+                                    <label>Username *</label>
+                                    <input type="text" placeholder="Enter Username" name="usename" autocomplete="off"
+                                        class="form-control bg-transparent" />
+                                    <!--end::Email-->
+                                </div>
+                                <!--end::Input group=-->
+                                <div class="fv-row mb-3">
+                                    <!--begin::Password-->
+                                    <label>Password *</label>
+                                    <div class="position-relative">
+                                        <input type="password" placeholder="Enter Password" name="password"
+                                            autocomplete="off" class="form-control bg-transparent" />
+                                        <div class="eye_icon position-absolute">
+                                            <img alt="remove" src="assets/images/Ic_remove_red_eye.svg">
+                                        </div>
+                                    </div>
+                                    <!--end::Password-->
+                                </div>
+                                <!--end::Input group=-->
+                                <!--begin::Wrapper-->
+                                <div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
+                                    <div></div>
+                                    <!--begin::Link-->
+                                    <a href="authentication/layouts/overlay/reset-password.html"
+                                        class="link-primary">Reset password</a>
+                                    <!--end::Link-->
+                                </div>
+                                <!--end::Wrapper-->
+                                <!--begin::Submit button-->
+                                <div class="d-grid ">
+                                    <button type="submit" id="kt_sign_in_submit" class="btn btn-primary">
+                                        <!--begin::Indicator label-->
+                                        <span class="indicator-label">Login</span>
+                                        <!--end::Indicator label-->
+                                        <!--begin::Indicator progress-->
+                                        <span class="indicator-progress">Please wait...
+                                            <span
+                                                class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+                                        <!--end::Indicator progress-->
+                                    </button>
+                                </div>
+                                <!--end::Submit button-->
+                                <!--begin::Sign up-->
+                                <!-- <div class="text-gray-500 text-center fw-semibold fs-6">Not a Member yet?
+                                    <a href="authentication/layouts/overlay/sign-up.html" class="link-primary">Sign
+                                        up</a>
+                                </div> -->
+                                <!--end::Sign up-->
+                            </form>
+                            <!--end::Form-->
+                        </div>
+                        <!--end::Wrapper-->
+                        <!--begin::Footer-->
+                        <div class="d-flex flex-stack">
+                            <!--begin::Languages-->
+                            <div class="me-10">
+                                <!--begin::Toggle-->
+                                <!-- <button
+                                    class="btn btn-flex btn-link btn-color-gray-700 btn-active-color-primary rotate fs-base"
+                                    data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start"
+                                    data-kt-menu-offset="0px, 0px">
+                                    <img data-kt-element="current-lang-flag" class="w-20px h-20px rounded me-3"
+                                        src="assets/media/flags/united-states.svg" alt="" />
+                                    <span data-kt-element="current-lang-name" class="me-1">English</span>
+                                    <i class="ki-outline ki-down fs-5 text-muted rotate-180 m-0"></i>
+                                </button> -->
+                                <!--end::Toggle-->
+                                <!--begin::Menu-->
+                                <!-- <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px py-4 fs-7"
+                                    data-kt-menu="true" id="kt_auth_lang_menu"> -->
+                                <!--begin::Menu item-->
+                                <!-- <div class="menu-item px-3">
+                                        <a href="#" class="menu-link d-flex px-5" data-kt-lang="English">
+                                            <span class="symbol symbol-20px me-4">
+                                                <img data-kt-element="lang-flag" class="rounded-1"
+                                                    src="assets/media/flags/united-states.svg" alt="" />
+                                            </span>
+                                            <span data-kt-element="lang-name">English</span>
+                                        </a>
+                                    </div> -->
+                                <!--end::Menu item-->
+                                <!--begin::Menu item-->
+                                <!-- <div class="menu-item px-3">
+                                        <a href="#" class="menu-link d-flex px-5" data-kt-lang="Spanish">
+                                            <span class="symbol symbol-20px me-4">
+                                                <img data-kt-element="lang-flag" class="rounded-1"
+                                                    src="assets/media/flags/spain.svg" alt="" />
+                                            </span>
+                                            <span data-kt-element="lang-name">Spanish</span>
+                                        </a>
+                                    </div> -->
+                                <!--end::Menu item-->
+                                <!--begin::Menu item-->
+                                <!-- <div class="menu-item px-3">
+                                        <a href="#" class="menu-link d-flex px-5" data-kt-lang="German">
+                                            <span class="symbol symbol-20px me-4">
+                                                <img data-kt-element="lang-flag" class="rounded-1"
+                                                    src="assets/media/flags/germany.svg" alt="" />
+                                            </span>
+                                            <span data-kt-element="lang-name">German</span>
+                                        </a>
+                                    </div> -->
+                                <!--end::Menu item-->
+                                <!--begin::Menu item-->
+                                <!-- <div class="menu-item px-3">
+                                        <a href="#" class="menu-link d-flex px-5" data-kt-lang="Japanese">
+                                            <span class="symbol symbol-20px me-4">
+                                                <img data-kt-element="lang-flag" class="rounded-1"
+                                                    src="assets/media/flags/japan.svg" alt="" />
+                                            </span>
+                                            <span data-kt-element="lang-name">Japanese</span>
+                                        </a>
+                                    </div> -->
+                                <!--end::Menu item-->
+                                <!--begin::Menu item-->
+                                <!-- <div class="menu-item px-3">
+                                        <a href="#" class="menu-link d-flex px-5" data-kt-lang="French">
+                                            <span class="symbol symbol-20px me-4">
+                                                <img data-kt-element="lang-flag" class="rounded-1"
+                                                    src="assets/media/flags/france.svg" alt="" />
+                                            </span>
+                                            <span data-kt-element="lang-name">French</span>
+                                        </a>
+                                    </div> -->
+                                <!--end::Menu item-->
+                                <!-- </div> -->
+                                <!--end::Menu-->
+                            </div>
+                            <!--end::Languages-->
+                            <!--begin::Links-->
+                            <!-- <div class="d-flex fw-semibold text-primary fs-base gap-5">
+                                <a href="pages/team.html" target="_blank">Terms</a>
+                                <a href="pages/pricing/column.html" target="_blank">Plans</a>
+                                <a href="pages/contact.html" target="_blank">Contact Us</a>
+                            </div> -->
+                            <!--end::Links-->
+                        </div>
+                        <!--end::Footer-->
+                    </div>
+                    <!--end::Content-->
+                </div>
+                <!--end::Wrapper-->
+            </div>
+            <!--end::Body-->
+        </div>
+        <!--end::Authentication - Sign-in-->
+    </div>
+    <!--end::Root-->
+    <!--begin::Javascript-->
+    <script>var hostUrl = "assets/";</script>
+    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+    <script src="assets/plugins/global/plugins.bundle.js"></script>
+    <script src="assets/js/scripts.bundle.js"></script>
+    <!--end::Global Javascript Bundle-->
+    <!--begin::Custom Javascript(used for this page only)-->
+    <script src="assets/js/custom/authentication/sign-in/general.js"></script>
+    <!--end::Custom Javascript-->
+    <!--end::Javascript-->
+</body>
+
+</html>
