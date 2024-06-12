@@ -5800,7 +5800,6 @@
 				$('#endDate').focus();  // Trigger the date picker for the input field
 			});
 
-
 			$('#startDate').daterangepicker({
 				singleDatePicker: true,
 				startDate: moment().subtract(6, 'days')
@@ -5845,90 +5844,27 @@
 					};
 				}
 
-
-
 				$('#config-demo').daterangepicker(options, function (start, end, label) {
 					$('#startDate').val(start.format('MM/DD/YYYY'));
 					$('#endDate').val(end.format('MM/DD/YYYY'));
 
-					// Calculate the number of days in the selected range
+					updateDaysDifference(start, end);
+				});
+
+				// Function to update the number of days in the selected range
+				function updateDaysDifference(start, end) {
 					var days = end.diff(start, 'days') + 1;
-
-					// Update the input value with the number of days
 					$('#config-demo .date-days').text(days);
+				}
 
-					// console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+				// Event listeners for changes to the start and end date inputs
+				$('#startDate, #endDate').on('change', function () {
+					var start = moment($('#startDate').val(), 'MM/DD/YYYY');
+					var end = moment($('#endDate').val(), 'MM/DD/YYYY');
+					updateDaysDifference(start, end);
 				});
 			}
 		});
-
-		// $(document).ready(function () {
-
-		// 	$('#datePickerDiv').click(function () {
-		// 		$('#startDate').focus();  // Trigger the date picker for the input field
-		// 	});
-		// 	$('#datePickerEnd').click(function () {
-		// 		$('#endDate').focus();  // Trigger the date picker for the input field
-		// 	});
-
-		// 	$('#startDate').daterangepicker({
-		// 		singleDatePicker: true,
-		// 		startDate: moment().subtract(6, 'days')
-		// 	});
-
-		// 	$('#endDate').daterangepicker({
-		// 		singleDatePicker: true,
-		// 		startDate: moment()
-		// 	});
-
-		// 	updateConfig();
-
-		// 	function updateConfig() {
-		// 		var options = {};
-
-		// 		options.ranges = {
-		// 			'Today': [moment(), moment()],
-		// 			'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-		// 			'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-		// 			'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-		// 			'Last 60 Days': [moment().subtract(59, 'days'), moment()],
-		// 			'Last 90 Days': [moment().subtract(89, 'days'), moment()],
-		// 			'Last 12 Months': [moment().subtract(364, 'days'), moment()],
-		// 		};
-
-		// 		if ($('#addClearDateRange').is(':checked')) {
-		// 			options.ranges = $.extend({ 'Clear Date Range': [null, null] }, options.ranges);
-		// 		}
-
-		// 		if ($('#locale').is(':checked')) {
-		// 			options.locale = {
-		// 				format: 'MM/DD/YYYY HH:mm',
-		// 				separator: ' - ',
-		// 				applyLabel: 'Apply',
-		// 				cancelLabel: 'Cancel',
-		// 				fromLabel: 'From',
-		// 				toLabel: 'To',
-		// 				customRangeLabel: 'Custom',
-		// 				daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-		// 				monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-		// 				firstDay: 1
-		// 			};
-		// 		}
-
-		// 		$('#config-demo').daterangepicker(options, function (start, end, label) {
-		// 			$('#startDate').val(start.format('MM/DD/YYYY'));
-		// 			$('#endDate').val(end.format('MM/DD/YYYY'));
-		// 			if (label) {
-		// 				$('#config-demo').val(label);
-		// 			} else {
-		// 				$('#config-demo').val(start.format('MM/DD/YYYY') + ' - ' + end.format('MM/DD/YYYY'));
-		// 			}
-		// 			console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
-		// 		});
-
-		// 	}
-
-		// });	
 	</script>
 
 
