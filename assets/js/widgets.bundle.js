@@ -2556,25 +2556,25 @@ var KTChartsWidget18 = function () {
                     o = {
                         series: [{
                             name: 'Delivered',
-                            data: [4, 2, 5, 6, 7, 8, 3]
+                            data: [4, 2, 5, 3, 5, 3, 3]
                         }, {
                             name: 'Submitted',
-                            data: [5, 9, 7, 8, 8, 6, 2]
+                            data: [4, 2, 3, 1, 5, 4, 3]
                         }, {
                             name: 'Failed',
-                            data: [8, 8, 9, 8, 9, 7, 4]
+                            data: [4, 1, 5, 3, 5, 2, 3]
                         }, {
                             name: 'DND',
-                            data: [8, 8, 6, 4, 8, 9, 3]
+                            data: [4, 2, 5, 3, 1, 3, 3]
                         }, {
                             name: 'Blacklist',
-                            data: [8, 4, 2, 8, 8, 8, 5]
+                            data: [2, 2, 5, 3, 4, 4, 3]
                         }],
                         chart: {
                             fontFamily: "inherit",
                             type: "bar",
                             width: '100%',
-                            height: a,
+                            height: 200,
                             toolbar: {
                                 show: !1
                             }
@@ -3518,7 +3518,7 @@ var KTChartsWidget22 = function () {
                 chart: {
                     fontFamily: "inherit",
                     type: "donut",
-                    width: 450
+                    width: 380
                 },
                 plotOptions: {
                     pie: {
