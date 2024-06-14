@@ -12,7 +12,7 @@ var KTCardsWidget1 = {
                     i = new ApexCharts(e, {
                         series: [{
                             name: "Sales",
-                            data: [30, 75, 55, 45, 30, 60, 75, 50],
+                            data: [20, 75, 55, 45, 30, 60, 75, 50],
                             margin: {
                                 left: 5,
                                 right: 5
