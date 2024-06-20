@@ -13,6 +13,52 @@ body {
     background-color: var(--bs-card) !important;
 }
 
+.chat_messenger_body .bg-light-info {
+      background-color: #eef5fb !important;
+}
+
+.chat_messenger_body .bg-light-primary {
+ background-color: #d6e7f5 !important;
+}
+
+.symbol-10px {
+    width: 20px;
+    height: 20px;
+}
+
+.symbol-10px img {
+    width: 100%;
+    height: 100%;
+}
+
+.mw-lg-230px {
+   max-width: 230px;
+} 
+
+.bg-chat {
+    background-color: #f8f9fb;
+}
+
+.message-separator span {
+    position: absolute;
+    top: -8px;
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.w-48 {
+    width: 48px;
+    height: 48px;
+}
+
+.wc-user-list .symbol-circle {
+ border: solid 1px #e3e3e3;
+}
+
+.user-icon img{
+ width: 100%;
+}
+
 .hr-box {
     width: 1px;
     height: 100%;
@@ -272,6 +318,28 @@ body {
 
 .text-black-light {
     color: #111 !important;
+}
+
+.text-date {
+    color: #6b778c;
+}
+
+.wc-count {
+    width: 24px;
+  height: 24px;
+   background-color: #2f7eb8;
+   color: #fff;
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 12px;
+}
+
+.wc-hr {
+        margin: 0.75rem 0;
+          border-top: solid 1px #dadef2;
+          opacity: 1;
 }
 
 body .border-bottom-card {
@@ -635,3 +703,29 @@ column-gap: 8px;
 font-size: 14px;
 font-weight: normal;
 }
+
+.w-content {
+    min-width: fit-content
+}
+
+.wc-user-list .separator {
+    margin: 0.75rem 0;
+}
+
+.wc-user-list .badge.badge-circle.badge-light-success {
+background-color: #2f7eb8;
+color: #fff;
+}
+
+ .whats-header {
+border-bottom: solid 1px #ddd;
+  background-color: #f6fbff
+ }
+
+ .chat-footer {
+     border-radius: 8px;
+  box-shadow: 0 2px 16px 0 rgba(46, 79, 91, 0.08);
+  border: solid 1px rgba(221, 221, 221, 0.4);
+  background-color: #fff;
+  display: flex;
+ }
