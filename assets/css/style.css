@@ -465,7 +465,31 @@ body .border-bottom-card {
     border: none;
 }
 
+@media only screen and (max-width: 1124px) {
+    .imges-info {
+    max-width: 256px;
+    margin-top: 165px !important;
+}
+ .action-card {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+  .action-card a {
+        max-width: fit-content;
+    }
+ }
+
 @media only screen and (max-width: 1024px) {
+    .action-card {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .action-card a {
+        max-width: fit-content;
+    }
     .apexcharts-legend {
         top: auto !important;
         right: 0px !important;
@@ -497,6 +521,10 @@ body .border-bottom-card {
     .app-footer {
         padding: 20px 10px;
     }
+
+.action-card a {
+        font-size: 8px;
+}
 
 }
 
@@ -767,7 +795,7 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
 }
 
 .preview-card {
-    width: 90%;
+    width: 80%;
     min-height: 200px;
     display: flex;
     flex-direction: column;
@@ -808,8 +836,10 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
 
 
 .templates-card {
-    border-radius: 10px;
+       border-radius: 10px;
     overflow: hidden;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .templates-header {
@@ -821,7 +851,7 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
     background-image: url(../images/wapp-bg.jpg);
     background-size: cover;
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     padding: 10px 12px;
     background-position: center center;
     display: flex;
@@ -848,6 +878,11 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
     border-radius: 20px;
      color: #038edc;
      font-size: 12px;
+
+}
+
+.action-card{
+         flex-wrap: wrap;
 }
 
 .preview-img-block {
@@ -892,4 +927,8 @@ padding-left: 15px;
   position: absolute;
   left: 0;
   top: 5px;
+}
+
+.action-card {
+    margin-left: 50px !important;
 }
