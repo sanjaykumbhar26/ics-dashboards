@@ -932,3 +932,15 @@ padding-left: 15px;
 .action-card {
     margin-left: 50px !important;
 }
+
+/* new css 17-07-2024 */
+
+.card-access-denied {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.card-error {
+    max-width: 500px;
+}
