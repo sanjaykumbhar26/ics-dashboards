@@ -481,6 +481,12 @@ body .border-bottom-card {
  }
 
 @media only screen and (max-width: 1024px) {
+
+    .preview-card .preview-info {
+    max-height: 145px;
+    overflow: scroll;
+}
+
     .action-card {
         flex-direction: column;
         display: flex;
@@ -819,6 +825,11 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
     background: linear-gradient(225deg, #fff 0%, #fff 50%, transparent 50%, transparent);
 }
 
+.preview-card .preview-info {
+  max-height: 170px;
+  overflow: scroll;
+}
+
 .pdf-icon {
     margin-bottom: 4px;
 }
@@ -932,7 +943,6 @@ padding-left: 15px;
 .action-card {
     margin-left: 50px !important;
 }
-
 /* new css 17-07-2024 */
 
 .card-access-denied {
