@@ -1029,3 +1029,85 @@ color: rgba(101, 101, 101, 1);
     padding: 5px;
     text-align: center;
 }
+
+.form-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.form-search .form-control {
+ width: 100%;
+}
+
+.form-search  span {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card-table-info tr th {
+    color: rgba(120, 122, 130, 1);
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    padding-right: 4px !important;
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+.card-table-info tr th span {
+    text-align: center ;
+    color: rgba(120, 122, 130, 1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card-table-info tr th:first-child {
+    min-width: 130px;
+}
+.card-table-info tr th:nth-of-type(2) {
+    min-width:90px;
+}
+.card-table-info tr th:nth-of-type(3) {
+    min-width:120px;
+}
+.card-table-info tr th:nth-of-type(4) {
+    min-width:90px;
+}
+
+.card-table-info tr td {
+    text-align: center !important;
+}
+
+.card-table-info tr th {
+    min-width: 100px;
+}
+
+.card-table-info tr td {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+.card-table-info tr td .active {
+    color: #17c653
+}
+.card-table-info tbody tr td{
+color: rgba(120, 122, 130, 1);
+vertical-align: middle;
+}
+
+.card-table-info .dt-info {
+ display: none;
+}
+
+.card-table-info tbody tr:nth-child(odd) td {
+    color: #777;
+}
+.card-table-info tbody tr:nth-child(even) td{
+   background: rgba(243, 247, 250, 1);
+}
