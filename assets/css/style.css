@@ -1090,8 +1090,8 @@ color: rgba(101, 101, 101, 1);
 }
 
 .card-table-info tr td {
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
 }
 .card-table-info tr td .active {
     color: #17c653
@@ -1099,10 +1099,26 @@ color: rgba(101, 101, 101, 1);
 .card-table-info tbody tr td{
 color: rgba(120, 122, 130, 1);
 vertical-align: middle;
+font-size: 14px;
+line-height: normal;
 }
 
 .card-table-info .dt-info {
  display: none;
+}
+
+.card-table-info  .btn-primary {
+     min-width: 90px;
+    font-size: 11px;
+    padding: 4px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card-table-info  .btn-primary img {
+   width:12px;
 }
 
 .card-table-info tbody tr:nth-child(odd) td {
