@@ -954,3 +954,78 @@ padding-left: 15px;
 .card-error {
     max-width: 500px;
 }
+
+.form-hidden {
+  display: none !important;
+}
+.form-active {
+display: block;
+}
+
+
+.modal-close-icon{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+
+.form-modal .modal-header {
+ border: none;
+ padding-bottom: 0;
+ justify-content: center;
+ padding-top: 40px;
+}
+
+.form-modal .modal-body {
+padding-bottom: 0px;
+padding-top: 0px
+}
+.form-modal .modal-footer {
+    border: none;
+    margin-top: 15px;
+}
+.form-modal .modal-footer button {
+  width: 100%;
+  max-width: 303px;
+  margin: 0 auto 30px;
+}
+
+.form-modal h1 {
+    font-size: 36px;
+    font-weight: 600;
+  color: rgba(69, 69, 69, 1);
+  margin-bottom: 12px;
+}
+
+.form-modal .modal-header p {
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+margin-bottom: 12px;
+color: rgba(101, 101, 101, 1);
+}
+
+.form-modal .modal-header p:last-child {
+    margin-bottom: 0;
+}
+
+.form-modal .modal-content {
+ border-radius: 20px;
+}
+
+.modal-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.modal-grid input {
+    width: 48px;
+    min-width: 48px;
+    max-width: 48px;
+    padding: 5px;
+    text-align: center;
+}
