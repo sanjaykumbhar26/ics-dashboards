@@ -1127,3 +1127,13 @@ line-height: normal;
 .card-table-info tbody tr:nth-child(even) td{
    background: rgba(243, 247, 250, 1);
 }
+
+
+.no-data {
+    min-height: 203px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
