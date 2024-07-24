@@ -1224,3 +1224,46 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
 .dashboard-box .date-block {
     width: 100%;
 }
+
+.alert-modal {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 1111;
+ background-color: rgba(59, 58, 58, 0.783);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.confirmation_alerts {
+    box-shadow: 0px 8px 8px -1px rgba(16, 24, 40, 0.03);
+    box-shadow: 0px 20px 24px -1px rgba(16, 24, 40, 0.08);
+    background: rgba(255, 255, 255, 1);
+    padding: 24px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    min-height: 204px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.confirmation_alerts svg {
+    margin-bottom: 24px;
+}
+
+.confirmation_alerts label {
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 500;
+line-height: 21.09px;
+text-align: center;
+color: rgba(0, 0, 0, 1);
+ margin-bottom: 33px;
+}
