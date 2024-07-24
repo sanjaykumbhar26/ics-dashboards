@@ -1267,3 +1267,138 @@ text-align: center;
 color: rgba(0, 0, 0, 1);
  margin-bottom: 33px;
 }
+
+.RCSCards-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.RCSCards-header label {
+font-size: 16px;
+font-weight: 600;
+line-height: 22.4px;
+text-align: left;
+color: rgba(23, 43, 77, 1);
+}
+
+.RCSCards-list ul {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+
+.RCSCards-list li .RCSCards-item {
+background: rgba(3, 142, 220, 1);
+padding: 4px 6px;
+border-radius: 4px;
+display: flex;
+max-width: max-content;
+gap: 4px;
+}
+
+.RCSCards-list li  label {
+color: #fff;
+}
+
+.RCSCards-list li img {
+    cursor: pointer;
+}
+
+.bot-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+       min-height: 100dvh;
+    z-index: 11111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bot-modal::after {
+    content: '';
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+     width: 100%;
+       min-height: 100%;
+       top: 0;
+       z-index: 1;
+}
+
+.bot-inner-modal {
+    margin: 20px;
+    max-width: 564px;
+        min-height: 586px;
+        border-radius: 8px 0px 0px 0px;
+        width: 100%;
+position: relative;
+z-index: 111;
+}
+
+.bot-inner-modal .card-header {
+  height: auto;
+  padding: 18px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.4px solid rgba(27, 50, 94, 0.2);
+    min-height: auto;
+    background: rgba(243, 247, 250, 1);
+
+}
+
+.bot-inner-modal .card-header  span {
+  color: rgba(102, 102, 102, 1);
+}
+
+.bot-inner-modal .card .card-body {
+  padding: 20px 16px;
+}
+
+.bot-inner-modal .card .card-body p {
+    color: rgba(102, 102, 102, 1);
+}
+
+.bot-inner-modal .card-body h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.bot-inner-modal .card-body ul li span {
+font-size: 14px;
+font-weight: 600;
+line-height: 18.2px;
+text-align: left;
+}
+
+.bot-inner-modal .card-body ul li:last-child {
+    margin-bottom: 0;
+}
+
+.bot-inner-modal .card-body ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+
+.bot-inner-modal .card-body ul li::after {
+    width: 8px;
+    height: 8px;
+    background: rgba(102, 102, 102, 1);
+    content: '';
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.popover {
+    z-index: 1111111;
+}
