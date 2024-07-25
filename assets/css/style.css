@@ -117,7 +117,12 @@ body {
     height: 40px;
 }
 
-
+.form-control::-ms-input-placeholder {
+    color: rgba(117, 121, 139, 1) !important;
+}
+.form-control::placeholder {
+     color: rgba(117, 121, 139, 1) !important;
+}
 .card-compose .form-control::-ms-input-placeholder {
     /* Edge 12-18 */
     color: #666;
@@ -489,7 +494,27 @@ body .border-bottom-card {
 .mobile-img-preview {
     display: none;
 }
+
+.whatsapp-btn-action {
+   flex-wrap: wrap !important;
+}
+
 @media only screen and (max-width: 1024px) {
+ .dashboard-box .card.date-block > div.d-flex:nth-of-type(2) .hr-box {
+   display: block;
+    background-color: rgba(224, 224, 224, 1);
+    height: 80px;
+}   
+.whatsapp-btn-action {
+    gap: 15px !important;
+        width: 100%;
+}
+
+.whatsapp-btn-action a{
+    width: 100% !important;
+    max-width:400px !important;
+    margin: 0 auto;
+}
 .mobile-img-preview {
  display: flex;
  align-items: center;
@@ -1261,6 +1286,8 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
     width: 100%;
 }
 
+
+
 .alert-modal {
  position: fixed;
  top: 0;
@@ -1438,4 +1465,127 @@ text-align: left;
 }
 .popover {
     z-index: 1111111;
+}
+
+.badge-light-primary {
+  color: #17c653;
+}
+
+.media-note {
+    color: rgba(120, 122, 130, 1);
+    margin-bottom: 20px;
+}
+
+
+.carouseloptiona .headerlabel {
+    display: flex;
+  justify-content: space-between;
+}
+
+::file-selector-button {
+    border:none;
+    background: rgba(243, 247, 250, 1);
+width: 121px;
+height: 40px;
+padding: 4px 12px 4px 12px;
+border-radius: 4px 0px 0px 4px;
+border: 1px 0px 0px 0px;
+}
+.fileInput{
+ border: 1px solid rgba(224, 224, 224, 1);
+width: 100%;
+height:40px;
+border-radius: 4px;
+}
+
+.file-note {color: rgba(223, 44, 44, 1); 
+    margin-top: 8px;
+} 
+
+#quill-editor-toolbar {
+    background: rgba(243, 247, 250, 1);
+}
+.carousel-card {
+    background: rgba(3, 142, 220, 0.05);
+    width: 100%;
+border-radius: 20px;
+padding: 16px 24px;
+}
+
+.body-list h3 {
+font-size: 16px;
+font-weight: 600;
+line-height: 19.2px;
+text-align: left;
+color: rgba(23, 43, 77, 1);
+}
+
+.headerlabel label {
+    font-size: 16px !important;
+font-weight: 600;
+line-height: 19.2px;
+text-align: left;
+color: rgba(23, 43, 77, 1);
+}
+
+.body-list ul li {
+    font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 18.2px;
+text-align: left;
+color: rgba(102, 102, 102, 1);
+margin-top: 8px;
+}
+
+.btn-body-row {
+  margin-bottom: 40px !important;
+}
+
+.select-button-type {
+  background: rgba(3, 142, 220, 1);
+  color: #fff;
+}
+
+
+.select-button-type .select2-selection__placeholder {
+     color: #fff !important;
+}
+
+.select-button-type .select2-selection__rendered {
+    color: #fff !important;
+}
+.carousel-card-item{
+    border: 1px solid rgba(3, 142, 220, 0.4);
+    max-width: 365px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.carousel-card-item-header {
+    background: rgba(243, 247, 250, 1);
+    padding: 13px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-card-item-header label {
+    background: rgba(3, 142, 220, 1);
+    color: #fff;
+    width: 30px;
+height: 30px;
+border-radius: 50px;
+display: flex;
+align-items:center;
+justify-content: center;
+}
+
+.carousel-card-item-header .close-icon {
+    cursor: pointer;
+}
+
+.carousel-card-item-body {
+    padding: 16px;
+    background: rgba(255, 255, 255, 1);
 }
