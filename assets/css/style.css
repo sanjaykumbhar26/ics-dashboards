@@ -546,12 +546,6 @@ body .border-bottom-card {
     font-size: 12px;
     padding: 10px 5px !important;
 }
-.button-option a {
- border-radius: 50px;
- background-color: rgba(244, 250, 255, 1) !important;
- border: none !important;
-
-}
 
 .ql-toolbar.ql-snow {
     padding: 4px;
@@ -615,9 +609,7 @@ body .border-bottom-card {
         width: 100%;
     }
 
-    .card-preview {
-        display: none;
-    }
+   
 
     .RCSCards-header {
         flex-direction: column;
@@ -737,6 +729,20 @@ body .border-bottom-card {
         height: auto;
     }
 
+}
+
+
+.whatsapp-preview {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+ .card-preview {
+        display: none;
+    }
+    .whatsapp-preview {
+        display: block;
+    }
 }
 
 .small-circle {
@@ -1744,6 +1750,7 @@ text-align: left;
     padding: 20px;
     box-shadow: 0px 1px 34px 0px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    display: none;
 }
 
 .recommend-alert::after {
@@ -1948,4 +1955,30 @@ font-size: 16px;
     width: 20px;
     height: 15px;
     margin-right: 10px;
+}
+
+.whatsapp-preview-item {
+    border: 1px dotted rgba(224, 224, 224, 1);
+    padding: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+.whatsapp-action {
+      width: 100%;
+      display: flex;
+      align-items: center;
+}
+.whatsapp-action a {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
 }
