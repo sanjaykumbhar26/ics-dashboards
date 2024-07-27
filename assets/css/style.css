@@ -478,7 +478,33 @@ body .border-bottom-card {
     }
 }
 
+.mobile-btn {
+    display: none;
+}
+
 @media only screen and (max-width: 1124px) {
+
+
+
+.carouseloptiona .mobile-btn a {
+    background-color: rgba(244, 250, 255, 1) !important;
+    border: none !important;
+    border-radius: 50px;
+    margin-bottom: 24px;
+    margin-top: 12px;
+}
+
+.body-list {
+    margin: 10px 0;
+}
+
+.mobile-btn {
+    display: block;
+}
+    .carouseloptiona .headerlabel .btn-active-color-primary{
+        display: none !important;
+    }
+
     .imges-info {
         max-width: 256px;
         margin-top: 165px !important;
@@ -504,6 +530,47 @@ body .border-bottom-card {
 }
 
 @media only screen and (max-width: 1024px) {
+
+.recommend-alert-content label {
+    font-size: 14px !important;
+}
+.recommend-alert-content p {
+    font-size: 14px !important;
+}
+.card-footer-compose {
+    padding: 10px 5px;
+   justify-content: center !important;
+}
+.card-footer-compose a {
+    min-width:120px;
+    font-size: 12px;
+    padding: 10px 5px !important;
+}
+.button-option a {
+ border-radius: 50px;
+ background-color: rgba(244, 250, 255, 1) !important;
+ border: none !important;
+
+}
+
+.ql-toolbar.ql-snow {
+    padding: 4px;
+}
+
+.carousel-card {
+        padding: 16px 14px !important;
+}
+
+.ql-format {
+    display: flex;
+}
+.ql-showHtml {
+    min-width: 40px !important;
+}
+.ql-snow .ql-toolbar button, .ql-snow.ql-toolbar button {
+        padding: 3px 1px;
+}
+
     .dashboard-box .card.date-block>div.d-flex:nth-of-type(2) .hr-box {
         display: block;
         background-color: rgba(224, 224, 224, 1);
@@ -715,6 +782,7 @@ body .border-bottom-card {
     background-color: #fff;
     font-weight: normal;
     font-size: 16px;
+    height: 43px;
 }
 
 .card .card-header.table-header {
@@ -868,6 +936,11 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
 .card-compose .col-lg-8 {
     padding-left: 0;
 }
+
+.button-option .col-lg-8 {
+  padding-left: 10px;
+}
+
 
 .card-preview label {
     text-align: center;
@@ -1671,7 +1744,6 @@ text-align: left;
     padding: 20px;
     box-shadow: 0px 1px 34px 0px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    display: none;
 }
 
 .recommend-alert::after {
