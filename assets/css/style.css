@@ -495,9 +495,7 @@ body .border-bottom-card {
                 top: 10px;
     }
 
-    .add-quick-reply a{
-        width: 100%;
-    }
+    
 }
 .mobile-btn {
     display: none;
@@ -560,7 +558,9 @@ body .border-bottom-card {
 }
 
 @media only screen and (max-width: 1024px) {
-
+    .add-quick-reply a{
+        width: 100%;
+    }
     .recommend-alert-content label {
         font-size: 14px !important;
     }
@@ -1952,7 +1952,7 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
 
 .country-number .selected {
     font-size: 16px;
-    background: rgba(243, 247, 250, 1);
+    background-color: rgba(243, 247, 250, 1);
     display: flex;
     align-items: center;
     gap: 2px;
@@ -1960,7 +1960,21 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
     height: 40px;
     border-radius: 4px 0 0 4px;
     border: 1px solid rgba(224, 224, 224, 1);
-    padding: 0 15px;
+    padding: 0 35px 0 15px;
+    position: relative;
+}
+
+.country-number .selected::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23038EDC' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    right: 0;
+
 }
 
 .country-number .options-container {
