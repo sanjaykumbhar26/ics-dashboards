@@ -2304,13 +2304,27 @@
 																<div class="col-lg-12 mt-5">
 																	<label for="exampleFormControlInput1"
 																		class=" form-label">Button Type</label>
-																	<div>
-																		<select class="Quickfromselect">
-																			<option>Quick Reply</option>
-																			<option>Visit Website</option>
-																			<option>Call phone number</option>
-																			<option>Copy offer code</option>
-																		</select>
+																	<div class="custom-select-wrapper">
+																		<div class="custom-select">
+																			<select class="Quickfromselect">
+																				<optgroup label="Quick reply buttons">
+																					<option
+																						data-description="Quick reply buttons">
+																						Quick reply buttons</option>
+																				</optgroup>
+																				<optgroup label="Call to action button">
+																					<option
+																						data-description="2 buttons maximum">
+																						Visit Website</option>
+																					<option
+																						data-description="1 button maximum">
+																						Call Phone Number</option>
+																					<option
+																						data-description="1 button maximum">
+																						Copy offer code</option>
+																				</optgroup>
+																			</select>
+																		</div>
 																	</div>
 																</div>
 																<!--end::Col-->
@@ -6473,6 +6487,66 @@
 			// });
 		});
 
+	</script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const customSelectWrapper = document.querySelector(".custom-select-wrapper");
+			const customSelect = customSelectWrapper.querySelector(".custom-select");
+			const selectElement = customSelect.querySelector("select");
+			const optgroups = selectElement.querySelectorAll("optgroup");
+
+			// Create the custom select trigger
+			const selectTrigger = document.createElement("div");
+			selectTrigger.classList.add("custom-select-trigger");
+			selectTrigger.textContent = selectElement.options[selectElement.selectedIndex].textContent;
+			customSelect.appendChild(selectTrigger);
+
+			// Create the custom options container
+			const optionsContainer = document.createElement("div");
+			optionsContainer.classList.add("custom-options");
+			customSelect.appendChild(optionsContainer);
+
+			// Create the custom optgroups and options
+			optgroups.forEach(optgroup => {
+				const customOptgroup = document.createElement("div");
+				customOptgroup.classList.add("custom-optgroup");
+
+				const customOptgroupTitle = document.createElement("div");
+				customOptgroupTitle.classList.add("custom-optgroup-title");
+				customOptgroupTitle.textContent = optgroup.label;
+				customOptgroup.appendChild(customOptgroupTitle);
+
+				const options = optgroup.querySelectorAll("option");
+				options.forEach(option => {
+					const customOption = document.createElement("div");
+					customOption.classList.add("custom-option");
+					customOption.innerHTML = `${option.textContent} <span class="custom-option-description">${option.dataset.description}</span>`;
+					customOption.dataset.value = option.value;
+					customOptgroup.appendChild(customOption);
+
+					customOption.addEventListener("click", function () {
+						selectTrigger.textContent = option.textContent; // Only set the text without description
+						selectElement.value = this.dataset.value;
+						optionsContainer.style.display = "none";
+					});
+				});
+
+				optionsContainer.appendChild(customOptgroup);
+			});
+
+			// Show/hide custom options on trigger click
+			selectTrigger.addEventListener("click", function () {
+				optionsContainer.style.display = optionsContainer.style.display === "block" ? "none" : "block";
+			});
+
+			// Close the custom options if clicked outside
+			document.addEventListener("click", function (e) {
+				if (!customSelect.contains(e.target)) {
+					optionsContainer.style.display = "none";
+				}
+			});
+		});
 	</script>
 	<!--end::Custom Javascript-->
 	<!--end::Javascript-->
