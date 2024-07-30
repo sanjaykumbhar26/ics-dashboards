@@ -1664,6 +1664,7 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
     max-width: 365px;
     border-radius: 8px;
     overflow: hidden;
+        max-width: 48%;
 }
 
 .carousel-card-item-header {
