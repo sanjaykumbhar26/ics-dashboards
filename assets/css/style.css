@@ -484,7 +484,15 @@ body .border-bottom-card {
 
 @media only screen and (max-width: 1124px) {
 
+ .carousel-card .carousel-card-item {
+    max-width: 96%;
+    margin: 0 auto;
+ }
 
+ .carousel-card {
+    background-color: #fff !important;
+    padding: 0;
+ }
 
     .carouseloptiona .mobile-btn a {
         background-color: rgba(244, 250, 255, 1) !important;
@@ -556,7 +564,7 @@ body .border-bottom-card {
     }
 
     .carousel-card {
-        padding: 16px 14px !important;
+        padding: 0 !important;
     }
 
     .ql-format {
