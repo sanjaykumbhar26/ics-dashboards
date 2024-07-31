@@ -535,8 +535,17 @@ body .border-bottom-card {
 
     .imges-info {
         max-width: 256px;
-        margin-top: 165px !important;
+        margin-top: 190px !important;
     }
+
+    
+
+    .preview-card {
+        max-width: 70%;
+          max-height: 180px;
+    }
+
+  
 
     .action-card {
         flex-direction: column;
@@ -995,6 +1004,7 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
 
 .card-preview .card-img img {
     max-width: 320px;
+    object-fit: contain;
 }
 
 .form.form-control {
@@ -1006,7 +1016,10 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
 }
 
 .card-img {
-    text-align: center;
+       text-align: center;
+    min-height: 560px;
+    object-fit: cover;
+    align-items: revert;
 }
 
 .template-list-download .menu-item a {
@@ -1053,7 +1066,14 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
     max-width: 256px;
     margin-top: 195px;
 }
+.wapp-preview {
+        min-height: auto !important;
+        margin-top: 10px;
+ }
 
+ .wapp-preview p:last-child {
+    margin-bottom: 0;
+ }
 .preview-card {
     width: 80%;
     min-height: 200px;
