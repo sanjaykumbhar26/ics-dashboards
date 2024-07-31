@@ -1071,6 +1071,11 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
         margin-top: 10px;
  }
 
+ .wapp-preview .preview-info {
+    display: flex;
+    justify-content: space-between;
+ }
+
  .wapp-preview p:last-child {
     margin-bottom: 0 !important;
  }
