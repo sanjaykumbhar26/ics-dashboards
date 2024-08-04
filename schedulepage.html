@@ -1394,9 +1394,6 @@
 													<label for="exampleFormControlInput1"
 														class="form-label  px-1 text-black-light">Upload
 														File</label>
-
-
-
 													<form class="form form-control px-1 py-0" action="#" method="post">
 														<!--begin::Input group-->
 														<div class="form-group  d-flex justify-content-between">
@@ -1699,11 +1696,12 @@
 													<label for="exampleFormControlInput1"
 														class="form-label">Schedule</label>
 
-													<div class="input-group mb-5">
-														<input id="startDate" type="text"
-															class="form-control border-right-0" placeholder="dd-mm-yyyy"
-															aria-label="dd-mm-yyyy" aria-describedby="basic-addon2" />
-														<span class="border-left-0 input-group-text bg-white">
+													<div id="startDate" class="input-group mb-5">
+														<input type="text" class="form-control border-right-0"
+															placeholder="dd-mm-yyyy hh:mm:ss" aria-label="dd-mm-yyyy"
+															aria-describedby="basic-addon2" />
+														<span
+															class="border-left-0 pt-0 pb-0 input-group-text bg-white cursor-pointer">
 															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
 																xmlns="http://www.w3.org/2000/svg">
 																<path
@@ -5500,9 +5498,20 @@
 				$('#endDate').focus();  // Trigger the date picker for the input field
 			});
 
-			$('#startDate').daterangepicker({
-				singleDatePicker: true,
-				startDate: moment().subtract(6, 'days')
+			$(document).ready(function () {
+				$('#startDate input').daterangepicker({
+					singleDatePicker: true,
+					timePicker: true, // Allows time selection
+					locale: {
+						format: 'DD-MM-YYYY hh:mm A' // Date format
+					},
+					startDate: moment().subtract(0, 'days')
+				});
+
+				// Open the date picker when the element with the ID is clicked
+				$('#startDate').on('click', function () {
+					$('#startDate input').focus(); // Trigger focus on the input to open the date picker
+				});
 			});
 
 			$('#endDate').daterangepicker({
