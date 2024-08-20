@@ -147,6 +147,7 @@ body {
     font-weight: normal;
     font-size: 16px;
     min-height: 48px;
+    font-weight: 400;
 }
 
 .form-select-lg {
@@ -276,7 +277,7 @@ body {
 }
 
 .app-sidebar-menu-secondary.menu .menu-link .menu-title {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: normal;
 }
 
@@ -308,11 +309,11 @@ body {
 }
 
 .fs-14 {
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 .fs-20 {
-    font-size: 20px;
+    font-size: 20px !important;
 }
 
 .text-gray {
@@ -369,6 +370,11 @@ body .border-bottom-card {
 
 .card-title {
     border-bottom: solid 1px rgba(27, 50, 94, 0.2);
+}
+
+h3.card-title {
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .completed {
@@ -2457,4 +2463,62 @@ background: linear-gradient(105.9deg, rgba(167, 10, 58, 0.8) -16.48%, rgba(167, 
     position: absolute;
     top: 0;
     right: 0;
+}
+
+
+/* new css  */
+.font-Inter {
+    font-family: "Inter", sans-serif;
+}
+
+ .overview-section .page-heading {
+  font-size: 18px !important;
+ }
+
+ .overview-card label {
+    font-size: 16px;
+    color: #666666;
+    font-weight: 400;
+ }
+
+.card-label {
+    font-size: 18px;
+    font-weight: 600;
+ }
+
+
+.select2-hidden-accessible {
+  --bs-form-select-bg-img: none;
+   background-image: none!important;
+}
+
+.text-gray2 {
+    color: #666;
+}
+
+
+.optional-fields-card .form-select {
+  height: 40px;
+}
+
+.optional-fields-card .form-control {
+  height: 40px;
+  min-height: 40px;
+}
+
+
+.message-box {
+    min-height: 120px !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.dropzone .dropzone-panel .dz-clickable {
+    border: 1.4px solid #038EDC !important;
+    background-color: #F0F9FF !important;
+    color: #038EDC;
+    font-weight: 600;
+   border: dotted 1px #038EDC !important;
 }
