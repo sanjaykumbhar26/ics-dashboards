@@ -1,7 +1,7 @@
 body {
-    font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root,
 [data-bs-theme=light] {
     --bs-primary: #038edc;
@@ -118,11 +118,11 @@ body {
 }
 
 .form-control::-ms-input-placeholder {
-    color: rgba(117, 121, 139, 1) !important;
+    color: #666 !important;
 }
 
 .form-control::placeholder {
-    color: rgba(117, 121, 139, 1) !important;
+   color: #666 !important;
 }
 
 .card-compose .form-control::-ms-input-placeholder {
@@ -134,10 +134,10 @@ body {
 }
 
 .card-compose .form-control::placeholder {
-    color: #666;
+    color: #666 !important;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px !important;
 }
 
 .form-control {
@@ -145,20 +145,22 @@ body {
     border: solid 1px #e0e0e0;
     background-color: #fff;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     min-height: 48px;
     font-weight: 400;
+    color: #666;
+    font-family: "Inter", sans-serif;
 }
 
 .form-select-lg {
     padding: .625rem 1rem;
-    font-size: 16px;
+    font-size: 14px !important;
     border-radius: 4px;
-    color: #666;
+    color: #666 !important;
 }
 
 .form-control::placeholder {
-    color: #666;
+    color: #666 !important;
     opacity: 1;
     /* Firefox */
     font-weight: normal;
@@ -1986,7 +1988,10 @@ div.table-responsive>div.dt-container>div.row>div[class^=col-]:last-child {
 }
 
 
-
+.select2-container--bootstrap5 .select2-selection--single .select2-selection__rendered {
+    color: #666;
+    font-size: 14px;
+}
 
 
 
@@ -2506,6 +2511,8 @@ background: linear-gradient(105.9deg, rgba(167, 10, 58, 0.8) -16.48%, rgba(167, 
   min-height: 40px;
 }
 
+.optional-fields-card .form-control div {  color: #666;}
+
 
 .message-box {
     min-height: 120px !important;
@@ -2522,3 +2529,5 @@ background: linear-gradient(105.9deg, rgba(167, 10, 58, 0.8) -16.48%, rgba(167, 
     font-weight: 600;
    border: dotted 1px #038EDC !important;
 }
+
+/*  */
